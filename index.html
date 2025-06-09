@@ -12,12 +12,12 @@
 <body>
   <header class="site-header">
     <div class="logo">RawInsight</div>
-    <nav class="nav-links" id="navLinks">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Toggle navigation">
+    <button class="burger" id="burger" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </header>
@@ -27,7 +27,7 @@
       <div class="content">
         <h1>Crafting clarity in every interface</h1>
         <p class="subheading">Partner with a UX studio that puts real users first.</p>
-        <a href="#contact" class="cta-button">Work with us</a>
+        <a id="hero-cta" href="#contact" class="cta-button">Work with us</a>
       </div>
     </section>
 
@@ -48,7 +48,7 @@
 
     <section id="contact" class="contact section">
       <h2>Let's collaborate</h2>
-      <form action="https://formspree.io/f/mqabpdya" method="POST">
+      <form aria-label="Contact form" action="https://formspree.io/f/mqabpdya" method="POST">
         <label>
           Name
           <input type="text" name="name" required>
@@ -68,7 +68,7 @@
     <section class="newsletter section">
       <h2>Stay in the loop</h2>
       <p>Be the first to know when our newsletter launches.</p>
-      <form class="newsletter-form">
+      <form aria-label="Newsletter signup" class="newsletter-form">
         <input type="email" placeholder="Your email" disabled>
         <button type="button" class="cta-button" disabled>Subscribe</button>
       </form>
@@ -85,6 +85,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
