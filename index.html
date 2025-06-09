@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RawInsight - UX Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">RawInsight</div>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
+  <main>
+    <section class="hero section">
+      <div class="content">
+        <h1>Crafting clarity in every interface</h1>
+        <p class="subheading">Partner with a UX studio that puts real users first.</p>
+        <a id="hero-cta" href="#contact" class="cta-button">Work with us</a>
+      </div>
+    </section>
+
+    <section id="services" class="services section">
+      <h2>What we offer</h2>
+      <ul>
+        <li>Rapid usability testing for new concepts</li>
+        <li>UX audits that pinpoint friction points</li>
+        <li>Design support for early-stage prototypes</li>
+        <li>Consulting for focused product teams</li>
+      </ul>
+    </section>
+
+    <section id="about" class="about section">
+      <h2>About RawInsight</h2>
+      <p>I'm a product-focused designer dedicated to bridging the gap between teams and their users. My approach is grounded in research and clear communication, helping you create experiences people love to use.</p>
+    </section>
+
+    <section id="contact" class="contact section">
+      <h2>Let's collaborate</h2>
+      <form aria-label="Contact form" action="https://formspree.io/f/mqabpdya" method="POST">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </section>
+
+    <section class="newsletter section">
+      <h2>Stay in the loop</h2>
+      <p>Be the first to know when our newsletter launches.</p>
+      <form aria-label="Newsletter signup" class="newsletter-form">
+        <input type="email" placeholder="Your email" disabled>
+        <button type="button" class="cta-button" disabled>Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2025 RawInsight</span>
+      <div class="social">
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
